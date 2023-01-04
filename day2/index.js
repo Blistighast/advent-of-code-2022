@@ -1,5 +1,4 @@
 const { readFileSync } = require("node:fs")
-const { title } = require("node:process")
 
 const example = readFileSync("example.txt", { encoding: "utf-8"})
 .replace(/\r/g, "") // remove all \r characters
