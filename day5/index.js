@@ -19,6 +19,7 @@ function parseInput(input) {
   
   // build each array of columns for each index
   const stacks = {}
+
   for (let row of stacksArr) {
     for (let i = 0; i < row.length; i++) {
       if (row[i] !== " ") {
@@ -52,7 +53,18 @@ function parseInput(input) {
 const parsedExample = parseInput(example)
 const parsedInput = parseInput(input)
 
+// go through all the moves to move the boxes
+function playMove([stacks, moves]) {
+  //make deep copy of stacks
+  const localStacks = JSON.parse(JSON.stringify(stacks))
+  for (const move of moves) {
+    
+  }
 
+}
+
+
+// give boxes at top of each stack
 function day5part1([stacks, moves]) {
   const topOfStack = []
 
