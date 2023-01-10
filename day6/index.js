@@ -26,3 +26,17 @@ function day6Part1(input) {
 
 console.log(day6Part1(example))
 console.log(day6Part1(input))
+
+//part2
+function day6part2(input) {
+  for (let i = 14; i <= input.length; i++) {
+    const marker = input.slice(i - 14, i)
+    const uniqueMarks = new Set(marker)
+    if (marker.length === uniqueMarks.size) {
+      return i
+    }
+  }
+}
+
+console.log(day6part2(example))
+console.log(day6part2(input))
